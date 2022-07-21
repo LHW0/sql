@@ -141,3 +141,6 @@ select job_id, sum(decode(department_id, 20, salary)) "20",
     sum(decode(department_id, 80, salary)) "80"
 from employees
 group by job_id;
+
+select count(employee_id = manager_id)
+from employees;

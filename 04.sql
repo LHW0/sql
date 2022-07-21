@@ -49,7 +49,7 @@ from employees;
 --      인사평가일은 입사한 지 3개월 후 첫번째 월요일이다.
 --      날짜는 YYYY.MM.DD로 표시한다.
 select last_name, to_char(hire_date, 'YYYY.mm.dd') hire_date, 
-        to_char(add_months(hire_date, 3), '월'),'yyyy.mm.dd')(next_day(add_months(hire_date, 3), '월'),'yyyy.mm.dd')
+        to_char(add_months(hire_date, 3), '월'), ('yyyy.mm.dd'),(next_day(add_months(hire_date, 3), '월'),'yyyy.mm.dd')
 from employees;
 ------------------------------
 
